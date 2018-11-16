@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 232410825}
   - component: {fileID: 232410824}
   - component: {fileID: 232410823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,10 +534,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  jumpSpeed: 10
   physicsBody: {fileID: 846381467}
   horizontalAxis: Horizontal
+  jumpButton: Jump
   playerAnimator: {fileID: 846381471}
   playerSprite: {fileID: 846381468}
+  playerCollider: {fileID: 846381466}
 --- !u!95 &846381471
 Animator:
   serializedVersion: 3
