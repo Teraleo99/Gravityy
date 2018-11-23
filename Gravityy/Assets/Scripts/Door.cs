@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour {
 
     //Designer variables
+    //variable to let us save the score, public so we can drag and drop
+    public Score scoreObject;
     public string sceneToLoad;
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -18,6 +20,8 @@ public class Door : MonoBehaviour {
         if (playerScript != null)
         {
             //we did hit player!
+            //save score using our score object reference
+            scoreObject.SaveScore();
             //Load next level
             SceneManager.LoadScene(sceneToLoad);
 
